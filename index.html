@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Army Test</title>
 </head>
 <body>
-    
+    <div id="first-section">
+        <h2 id="first-title">BATTALION FORCE MANAGEMENT</h2>
+        <form action="#" id="soldier-form">
+            <input id="name-input" type="text" placeholder="Full Name">
+            <input id="rank-input" type="text" placeholder="Rank">
+            <input id="position-input" type="text" placeholder="Position">
+            <input id="platoon-input" type="text" placeholder="Platoon">
+            <input id="time-input" type="text" placeholder="Mission Time (Seconds)">
+            <select id="status-input" placeholder="Status" required>
+                <option value="" disabled selected hidden>Select a Status</option>
+                <option value="Active">Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <button id="add_button">Add Personnel</button>
+        </form>
+    </div>
+    <div id="second-section">
+        <h2 id="second-title">FORCES OVERVIEW</h2>
+        <table id="soldier-table">
+            <thead>
+                <tr>
+                    <th><button id="filter">Full Name</button></th>
+                    <th>Rank</th>
+                    <th>Position</th>
+                    <th>Platoon</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ariel</td>
+                    <td>Sergeant</td>
+                    <td>Mashak Tash</td>
+                    <td>Pluga C</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="actionBtn">Remove</button>
+                        <button class="actionBtn">Mission</button>
+                        <button class="actionBtn">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="edit_container">
+        <h2 id="edit_title">EDIT PERSONNEL</h2>
+        <form id="edit_form">
+            <input id="name-edit" type="text" placeholder="Full Name">
+            <input id="rank-edit" type="text" placeholder="Rank">
+            <input id="position-edit" type="text" placeholder="Position">
+            <input id="platoon-edit" type="text" placeholder="Platoon">
+            <input id="time-edit" type="text" placeholder="Mission Time (Seconds)">
+            <select id="status-edit" placeholder="Status" required>
+                <option value="" disabled selected hidden>Select a Status</option>
+                <option value="Active">Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <button id="edit_button">Add Personnel</button>
+        </form>
+        </form>
+    </div>
 </body>
+</html>
 </html>
