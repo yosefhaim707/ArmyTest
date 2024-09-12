@@ -113,3 +113,75 @@ h2 {
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
+#edit_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2C3E50;
+}
+
+#edit_form {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-self: center;
+    background-color: #34495E;
+    width: 40em;
+    height: 25em;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    margin: 10px;
+}
+
+#edit_form input {
+    border-radius: 8px;
+    border: none;
+    height: 2em;
+    padding: 10px;
+    background-color: #22313F;
+    
+}
+
+#edit_form input::placeholder {
+    color: azure;
+}
+
+#edit_form select {
+    border-radius: 8px;
+    border: none;
+    height: 3em;
+    padding: 10px;
+    background-color: #22313F;
+    color: azure;
+}
+
+#cancel_button {
+    border-radius: 8px;
+    border: none;
+    height: 3em;
+    padding: 10px;
+    background-color: #E74C3C;
+    color: azure;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#edit_button {
+    border-radius: 8px;
+    border: none;
+    height: 3em;
+    padding: 10px;
+    background-color: #28975D;
+    color: azure;
+    font-weight: bold;
+    margin-top: 10px;
+}
